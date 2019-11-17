@@ -1,8 +1,8 @@
 /*
 	Este programa exerce as funcionalidades de desenho Windows GDI da biblioteca wingdi.h
-	O codigo est· disponÌvel na minha pagina para download no Github :https://github.com/DiogoRodrigues111 
-	Este cÛdigo fornece o poder da Linguagem C para Windows Win32 API
-															Criado por Diogo Rodrigues Roessler (dez 2019)
+	O codigo est√° dispon√≠vel na minha pagina para download no Github :https://github.com/DiogoRodrigues111 
+	Este c√≥digo fornece o poder da Linguagem C para Windows Win32 API
+								Criado por Diogo Rodrigues Roessler (nov 2019)
 */
 
 #include "CClassic.h"
@@ -16,7 +16,7 @@ int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPrevInstance, LPSTR lpStr, int nC
 LRESULT CALLBACK WndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
 INT_PTR OpenFileDialog(HWND hWnd);
 
-/* FunÁıes ainda n„o implementada */
+/* Fun√ß√µes ainda n√£o implementada */
 //INT_PTR CALLBACK EventDraw(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
 //INT_PTR CALLBACK Draw(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
 
@@ -50,8 +50,8 @@ int WINAPI WinMain(
 
 	if (!RegisterClassEx(&wc)) {
 		MessageBox(NULL,
-			_T("Falha ao carregar a class pai, tente contactar o propriet·rio do Software para mais informaÁıes"),
-			_T("WARRING: Class has FAILED - N„o pode harmonizar as funcionalidades"),
+			_T("Falha ao carregar a class pai, tente contactar o propriet√°rio do Software para mais informa√ß√µes"),
+			_T("WARRING: Class has FAILED - N√£o pode harmonizar as funcionalidades"),
 			MB_ICONINFORMATION | MB_OK);
 		return 1;
 	}
@@ -65,8 +65,8 @@ int WINAPI WinMain(
 
 	if (!hWnd) {
 		MessageBox(NULL,
-			_T("Falha ao carregar a janela pai, tente contactar o propriet·rio do Software para mais informaÁıes"),
-			_T("WARRING: Window has FAILED - N„o pode harmonizar as funcionalidades da Janela Pai"),
+			_T("Falha ao carregar a janela pai, tente contactar o propriet√°rio do Software para mais informa√ß√µes"),
+			_T("WARRING: Window has FAILED - N√£o pode harmonizar as funcionalidades da Janela Pai"),
 			MB_ICONINFORMATION | MB_OK);
 		return 1;
 	}
